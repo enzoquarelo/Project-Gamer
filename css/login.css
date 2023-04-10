@@ -1,0 +1,623 @@
+/* Imported Sources */
+
+@font-face {
+    font-family:TitilliumWeb-Black;
+    src: url(../assets/Fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: Titillim-Web;
+    src: url(../assets/Fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family:TitilliumWeb-Bold;
+    src: url(../assets/Fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: Quick-Sand;
+    src: url(../assets/Fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../assets/Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
+/* Informations Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout-grid{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+/********************************************************* Mobile First ***************************************************************/
+
+/* - - - - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - -  */
+
+.header-bottom{
+    width: 100%;
+}
+
+.header-flex{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header{
+    height: 60px;
+    background-color: #1b1426;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header-top{
+    display: none;
+}
+
+#mobile {
+    display: block;
+}
+
+/* - - - - - - - - - - - - - - - Header-Bottom Menu - - - - - - - - - - - - - - - - */
+
+.MostrarMenu{
+    left: 0;
+}
+
+header nav {
+   background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+   backdrop-filter: blur(6px);
+
+   position: fixed;
+   top: 60px;
+   left: -75%;
+   flex-direction: column;
+   height: 606px;
+   width: 75%;
+   display: flex;
+   align-items: center;
+   z-index: 10000;
+
+   transition: left 0.2s;
+
+   position: fixed;
+}
+
+/* Text Formatation */
+
+header nav a{
+    color: white;
+    text-decoration: none;
+}
+
+header nav a{
+    border-bottom: 1px solid #F9AA01;
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header #navmenu{
+    display: flex;
+    align-items: center;
+
+    font-family: "Quick-Sand";
+    font-size: 16px;
+}
+
+header .header-bottom nav>a:hover {
+    color: #F9AA01;
+}
+
+#telefone,
+#email{
+    color: white;
+}
+
+/* Midia Icons */
+
+.midia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    width: 100%;
+    height: 40px;
+}
+
+.midia a{
+    border-bottom: none;
+}
+
+/* Menu Contacts */
+
+#contato1{
+    border-bottom: 1px solid #F9AA01;
+
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+
+#contato2{
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+/* Icons Formatation */
+
+#telephone{
+    width: 30px;
+    height: 30px;
+}
+
+#Email{
+    width: 30px;
+    height: 30px;
+}
+
+#Facebook{
+    width: 13px;
+    height: 20px;
+}
+
+#Icons{
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Icon More */
+
+#icon-user_menu {
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+
+    position: fixed;
+    top: 60px;
+    right: -80px;
+    flex-direction: column;
+    height: 200px;
+    width: 80px;
+
+    transition: right 0.2s;
+}
+
+#icon-user_menu > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 10px;
+}
+
+.MostrarMais{
+    right: 0 !important;
+}
+
+#profile,
+#mall,
+#search{
+    width: 45px;
+    height: 45px;
+}
+
+
+/* formatacao de fontes */
+
+h1 {
+    font-family: titillium;
+    font-size: 40px;
+    color: #ffff;
+    text-shadow: #FD4255 0 0 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-family: titillium;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1B1426;
+
+    text-align: center;
+}
+
+p {
+    font-family: inter;
+    font-size: 14px;
+    color: #ffff;
+}
+
+header .header-bottom nav a {
+    font-family: inter;
+    font-size: 14px;
+    color: #ffff;
+}
+
+
+/*  - - - - - - - - - - - - - - - - Main Section Login - - - - - - - - - - - - - - - -  */
+
+.login-section{
+    background-image: url(../images/Imagem\ Banner-Login.png);
+    height: 687px;
+
+    margin-top: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* Box Form */
+
+.boxform{
+    background: linear-gradient(112.9deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.31) 100%);
+    backdrop-filter: blur(7.5px);
+
+    width: 335px;
+    height: 462px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1#tittlebox{
+    width: 118px;
+
+    color: white;
+
+    font-family: "TitilliumWeb-Black";
+    font-size: 40px;
+    text-transform: uppercase;
+
+    margin-top: 20px;
+}
+
+hr{
+    background-color: #F9AA01;
+
+    border: 1px solid transparent;
+
+    width: 125px;
+}
+
+/* Formatation Forms */
+
+.formemail,
+.formpassword{
+    background: linear-gradient(90deg, rgba(239, 239, 239, 0.6) 0.7%, rgba(239, 239, 239, 0.1) 100%);
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    width: 272px;
+    height: 40px;
+}
+
+#profile,
+#password{
+    width: 20px;
+    height: 20px;
+
+    margin-left: 10px;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+
+    outline: none;
+
+    width: 170px;
+    height: 24px;
+    
+    margin-left: 10px;
+
+    color: white;
+}
+
+.formemail input::placeholder,
+.formpassword input::placeholder{
+    color: white;
+    font-family: "Titillim-Web";
+    font-family: 16px;
+}
+
+.formemail{
+    margin-top: 80px;
+}
+
+#forms{
+    width: 272px;
+    height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+}
+
+/* Formatation Button */
+
+button#loginbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 71px;
+
+    background: #F9AA01;
+    border-radius: 8px;
+
+    width: 272px;
+    height: 40px;
+
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+
+    margin-top: 20px;
+}
+
+
+/****************************************************************************FOOTER*****************************************************/
+
+footer{
+    background-color: #1b1426;
+
+    height: 1530px;
+    width: 100%;
+}
+
+/* Section Principal */
+
+#logo-footer{
+    width: 143px;
+    height: 45px;
+
+    position: relative;
+    left: calc(50% - 71.5px);
+    top: 20px;
+}
+
+#AboutGamer{
+    font-family: "Quick-Sand";
+    font-size: 16px;
+    text-align: justify;
+
+    color: white;
+
+    position: relative;
+    top: 50px;
+}
+
+.MidiasFooter{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    top: 150px;
+}
+
+h5{
+    font-family: Inter;
+    font-size: 30px;
+
+    color: white;
+}
+
+#hrfooter{
+    background-color: #F9AA01;
+
+    border: 1px solid transparent;
+
+    width: 120px;
+}
+
+
+/* Section UnsefullLinks */
+
+
+.UsefulLinksFooter{
+    position: relative;
+    top: 200px;
+}
+
+ul.Links{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
+li:before{
+   content: "\2015";
+   margin-right: 10px;
+   color: #F9AA01;
+}
+
+li{
+    color: white;
+
+    font-family: "TitilliumWeb-Bold";
+    font-size: 16px;
+
+    width: 110px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+/* Section ContactsFooter */
+
+.ContactsFooter{
+    position: relative;
+    top: 320px;
+}
+
+footer .ContactsFooter p{
+    font-family:TitilliumWeb-Bold;
+    font-size: 16px;
+
+    color: white;
+}
+
+#first{
+    margin-top: 50px;
+}
+
+footer .ContactsFooter span{
+    font-family:TitilliumWeb-Bold;
+    font-size: 16px;
+
+    color: #F9AA01;
+}
+
+
+/* Section Footer Newsletter */
+
+.NewFooter{
+    position: relative;
+    top: 380px;
+}
+
+input{
+    outline: none;
+
+    color: white;
+}
+
+#form{
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    width: 300px;
+    height: 40px;
+
+    margin-top: 30px;
+    margin-left: 0;
+
+    background: linear-gradient(90deg, rgba(239, 239, 239, 0.6) 0.7%, rgba(239, 239, 239, 0.1) 100%);
+    backdrop-filter: blur(3px);
+}
+
+input::placeholder {
+    font-family: "Quick-Sand";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    padding-left: 6px;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 71px;
+
+    background: #F9AA01;
+    border-radius: 8px;
+
+    width: 300px;
+    height: 40px;
+
+    margin-top: 15px;
+
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+}
+
+footer .rights p{
+    color: white;
+
+    font-family: Titillim-Web;
+    font-size: 16px;
+
+    width: 262px;
+
+    position: relative;
+    top: 370px;
+    left: calc(50% - 131px);
+}
+
+#background-vector{
+    width: 40px;
+    height: 40px;
+
+    background-color: #F9AA01;
+
+    border-radius: 8px;
+
+    position: relative;
+    top: 300px;
+    left: 300px;
+}
+
+#vector{
+    position: relative;
+    top: 337px;
+    left: 307px;
+
+    z-index: 100;
+}
